@@ -1,70 +1,16 @@
-# Getting Started with Create React App
+1. 'ExpenseForm' & 'NewExpense' components:
+The ExpenseForm component has a form for which a new expense with the Title, Date & Amoint properties & inputed & then rendered in the Expenses List below. The inout uses the useState Hook. The handleSubmit function tranfers the captured data into the expenseData constant & aranges the data respectively to be later rendered in the Expenses List, ater the NewExpense component saves the data through the habdleSaveExpenseData function.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+2. The ExpenseDate component manages the input for the date section, with the help of inbuilt javascript and react tools.
 
-## Available Scripts
+3. The ExpenseItem is the reusable component in which the data gathered from the form is extracted through props & stored.
 
-In the project directory, you can run:
+4. The ExpenseFilter component is used to filter ExpenseItem components according to the date(year) prop. This component is entered into the Expenses List.
 
-### `npm start`
+5. The ExpensesList component maps the array of expenses with respective props (also giving it a unique key.id), after filtering for ExpenseItem components with the selected date prop.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+6. The Chart folder contains the single ChartBar component, which a unique month label & a dynamic inline style in which the height in % of the blue barfill compared to the whole 'bar' set in the CSS file is proportional to the £{amount} property compared to the toal expense amount in the given year, the (maxValue). This is inserted into the Chart component which maps the ChartBars with the respective label (month 1st 3 letters) props to the shit my bro.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+7. The Expenses component contains the filterhandler & the ExpensesFilter, ExpensesChart & ExpensesList components.
 
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+8. The App component renderes the NewExpense component for the form, & the Expenses component which has the rendered filter, List & Chart. Prior is the EXAMPLES array of already set expenses & the handleAddExpensefunction to render a new expense with the prevExpenses in the list below. With the help of the useState hook with state set to the EXAMPLES array.

@@ -7,7 +7,19 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+* {
+  background-color: #08052f;
+  color: white;
+}
+h3 {
+  position: relative;
+  left: 45%;
+  width: 12%;
+}
+
+h3:hover {
+  border: 5px solid #08052f;
+  background-color: white;
+  color: #08052f;
+  border-radius: 20px;
 }

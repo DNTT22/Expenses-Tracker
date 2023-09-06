@@ -1,0 +1,39 @@
+.new-expense {
+    border: 10px solid #91b3ee;
+    padding: 1rem;
+    margin: 2rem auto;
+    width: 50rem;
+    max-width: 95%;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 1px 8px rgba(0, 0, 0, 0.25);
+    background-color: #08052f;
+  }
+  
+  .new-expense button {
+    font: inherit;
+    cursor: pointer;
+    padding: 1rem 2rem;
+    border: 1px solid #064fa2;
+    background-color: #064fa2;
+    color: white;
+    border-radius: 12px;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    animation: glow 3s infinite ease-out;
+  }
+
+  @keyframes glow  {
+    0% { box-shadow: 0px 0px 2px #5a99e6;
+  
+    }
+  
+    25% { box-shadow: 0px 0px 8px #5a99e6;
+  
+    }
+    75% { box-shadow: 0px 0px 2px #5a99e6;
+  
+    }
+
+  }
+  
