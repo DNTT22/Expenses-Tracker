@@ -5,12 +5,15 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' version='1.1' xmlns:xlink='http://www.w3.org/1999/xlink' xmlns:svgjs='http://svgjs.dev/svgjs' width='1440' height='560' preserveAspectRatio='none' viewBox='0 0 1440 560'%3e%3cg mask='url(%26quot%3b%23SvgjsMask1004%26quot%3b)' fill='none'%3e%3crect width='1440' height='560' x='0' y='0' fill='rgba(14%2c 3%2c 74%2c 1)'%3e%3c/rect%3e%3cpath d='M 0%2c464 C 57.6%2c407.8 172.8%2c176.6 288%2c183 C 403.2%2c189.4 460.8%2c508.8 576%2c496 C 691.2%2c483.2 748.8%2c140.4 864%2c119 C 979.2%2c97.6 1036.8%2c375.6 1152%2c389 C 1267.2%2c402.4 1382.4%2c226.6 1440%2c186L1440 560L0 560z' fill='rgba(65%2c 24%2c 160%2c 1)'%3e%3c/path%3e%3cpath d='M 0%2c334 C 96%2c303 288%2c161.2 480%2c179 C 672%2c196.8 768%2c458.6 960%2c423 C 1152%2c387.4 1344%2c85.4 1440%2c1L1440 560L0 560z' fill='rgba(69%2c 15%2c 220%2c 1)'%3e%3c/path%3e%3c/g%3e%3cdefs%3e%3cmask id='SvgjsMask1004'%3e%3crect width='1440' height='560' fill='white'%3e%3c/rect%3e%3c/mask%3e%3c/defs%3e%3c/svg%3e");
+  background-size: cover;
 }
 
 * {
-  background-color: #08052f;
+  
   color: white;
 }
+
 h3 {
   position: relative;
   left: 45%;
